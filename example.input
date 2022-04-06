@@ -1,0 +1,60 @@
+#!/bin/bash
+# AUTOR: Douglas Medeiros Nehme
+# PLACE: Rio de Janeiro - Brazil
+# CONTACT: medeiros.douglas3@gmail.com
+# CRIATION: apr/2022
+# OBJECTIVE: Global variables of Ponto Project
+
+#################################################
+#### Path Definiiton ############################
+#################################################
+ROOTDIR="/home/douglas/Dropbox/profissional/ponto-project"
+CONDA_PATH="/home/douglas/miniconda3"
+CONDA_ENV=ponto-v0.1.0
+
+# If you set AUTO_DATADIR as "yes" the downloaded
+# data will be saved in a folder called `data`
+# inside $ROOTDIR and YOUR_DATADIR will be
+# ignored. But if you set AUTO_DATADIR as "no"
+# YOUR_DATADIR need to point to the folder in
+# your system where downloaded data will be
+# saved. If YOUR_DATADIR do not exist it will be
+# created. If it is impossible a
+# message will be printed in your terminal and a
+# log.error file will be created in the $ROOTDIR
+AUTO_DATADIR="yes"
+YOUR_DATADIR=""
+
+#################################################
+#### Area Definition  ###########################
+#################################################
+# LON_MIN/LON_MAX format: [-180; 180]
+LON_MIN=-55.0
+LON_MAX=-25.0
+
+LAT_MIN=-40.0
+LAT_MAX=-10.0
+
+#################################################
+#### Time Definition  ###########################
+#################################################
+# Format: %d-%m-%Y %H:%M:%S
+# Based on https://strftime.org/
+DATETIME_MIN="30-11-2021 00:00:00"
+DATETIME_MAX="21-02-2022 23:59:59"
+
+#################################################
+#### Data Type Definition  ######################
+#################################################
+# Options for this Ponto Project version
+# DATATYPE="buoy"
+DATATYPE="buoy"
+
+#################################################
+#### DO NOT CHANGE FROM HERE ####################
+#################################################
+DATADIR="$ROOTDIR/data"
+SCRIPTDIR="$ROOTDIR/script/download_data"
+LOGFILE="$DATADIR/log"
+CONDA_SH_PATH="$CONDA_PATH/etc/profile.d/conda.sh"
+PATH_PYTHON="$CONDA_PATH/envs/$CONDA_ENV/bin/python3"
