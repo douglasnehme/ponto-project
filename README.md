@@ -10,7 +10,7 @@ Automated download of different types of oceanographic data for the South Atlant
 - Planned
     - [Argo](https://argo.ucsd.edu/)
     - [Drifter](https://www.aoml.noaa.gov/phod/gdp/)
-    - [SiMCosta (Brazilian Coast Monitoring System)](https://simcosta.furg.br/home)
+    - [SiMCosta (Monitoring System of the Brazilian Coast)](https://simcosta.furg.br/home)
     - Satellite data from different sources
     - Tide Gauges from different sources
 
