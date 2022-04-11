@@ -1,5 +1,5 @@
 # :trident: Ponto Project
-Automated download of different types of oceanographic data for the South Atlantic based on spatial and temporal limits.
+Automated download of different types of oceanographic data for the South Atlantic Ocean based on spatial and temporal limits.
 
 - Implemented
     - [PNBOIA (Brazilian National Buoy Program)](https://www.marinha.mil.br/chm/dados-do-goos-brasil/pnboia)
