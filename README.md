@@ -2,7 +2,7 @@
 Automated download of different types of oceanographic data for the South Atlantic based on spatial and temporal limits.
 
 - Implemented
-    - [PNBOIA (Brazilian National Buoy Program)](https://www.marinha.mil.br/chm/dados-do-goos-brasil/pnboia)]
+    - [PNBOIA (Brazilian National Buoy Program)](https://www.marinha.mil.br/chm/dados-do-goos-brasil/pnboia)
 
 - In Development
     - [PIRATA](https://www.pmel.noaa.gov/gtmba/pmel-theme/atlantic-ocean-pirata)
