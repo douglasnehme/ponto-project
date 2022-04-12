@@ -120,12 +120,17 @@ def get_weather_data(
                     buoys_filelist[buoy].append(file)
 
     for buoy, files in buoys_filelist.items():
+        df = pd.DataFrame()
         for compressed in files:
             uncompressed = subprocess.Popen([
                 'tar',
                 '-xzf',
                 compressed
             ])
+            part_df = pd.read_csv(
+                uncompressed
+            )
+            
 
     
     stop
