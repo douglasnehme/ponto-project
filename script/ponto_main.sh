@@ -91,8 +91,11 @@ for name in ${DATATYPE[*]}; do
         # on each subfolder of SCRIPTDIR
         for script in "$SCRIPTDIR/$name/"download*; do
             
-            echo -e ">> Downloading data" \
-            "into $DATATYPE_DIR" |& tee -a \
+            echo -e ">> Searching for" \
+            "$name data" |& tee -a \
+            "$LOGFILE"
+            echo -e ">> Please wait, it can take" \
+            "some minutes" |& tee -a \
             "$LOGFILE"
             # Get script extension suffix to
             # properly run it

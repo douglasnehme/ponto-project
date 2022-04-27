@@ -137,6 +137,26 @@ def get_weather_data(database):
                     index_col=[0],
                     infer_datetime_format=True
                 )
+                # Test if the index has a datetime format
+                if not isinstance(data.index, pd.DatetimeIndex):
+                    for column in data.columns:
+                        # As in some wrong tables the
+                        # datetime column could be 
+                        # capitalized or not this was
+                        # a way to get the corret
+                        # index column
+                        if 'atetime' in column:
+                            data_idx = column
+                
+                            data = pd.read_csv(
+                                wpath_suffix,
+                                sep=',',
+                                header=0,
+                                na_values=[-9999, -9999.0],
+                                parse_dates=True,
+                                index_col=data_idx,
+                                infer_datetime_format=True
+                            )
 
                 buoys_weather_data[row.short_name] = data
 
@@ -255,7 +275,7 @@ if weather_data_time_filtered:
         # Rename index column
         df.index.name = 'datetime'
         
-        # Save processed file
+        # Save file
         df.to_csv(
             os.path.join(
                 obsdir,
