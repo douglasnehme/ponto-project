@@ -1,5 +1,6 @@
 # :trident: Ponto Project
 Automated download of different types of oceanographic data for the South Atlantic Ocean based on spatial and temporal limits.
+
 All data obtained does not and is not intended to undergo any extra treatment beyond that provided by the original sources. However, some minimal modifications are necessary, as in the case of the PIRATA Project data, where all variables of a buoy are gathered in a single file, unlike what is observed in their FTP server.
 
 ## Data Bases
@@ -30,6 +31,6 @@ For a correct use of the Ponto Project system, it is recommended to clone the co
 Make a copy of the example.input file by changing its name to ponto.input and adapt it for your purpose with the desired values for longitude, latitude, datetime, paths, and your credentials.
 To create your own login and password to access PIRATA Project data from the Tropical Atmosphere Ocean (TAO) Project of the Pacific Marine Environmental Laboratory (PMEL) FTP server, please contact one of next emails:
 
-[Dai McClurg](mailto:dai.c.mcclurg@noaa.gov)
-[Kenneth Connell](mailto:kenneth.connell@noaa.gov)
-[Global Tropical Moored Buoy Array Program](mailto:oar.pmel.taotech@noaa.gov)
+- [Dai McClurg](mailto:dai.c.mcclurg@noaa.gov)
+- [Kenneth Connell](mailto:kenneth.connell@noaa.gov)
+- [Global Tropical Moored Buoy Array Program](mailto:oar.pmel.taotech@noaa.gov)
