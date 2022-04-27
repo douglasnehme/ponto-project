@@ -30,7 +30,7 @@ For a correct use of the Ponto Project system, it is recommended to clone the co
 ## Definition of Spatial and Temporal Limits
 Make a copy of the example.input file by changing its name to ponto.input and adapt it for your purpose with the desired values for longitude, latitude, datetime, paths, and your credentials.
 
-To create your own login and password to access PIRATA Project data from the Tropical Atmosphere Ocean (TAO) Project of the Pacific Marine Environmental Laboratory (PMEL) FTP server, please contact one of next emails:
+To create your own login and password to access PIRATA Project data from the Tropical Atmosphere Ocean (TAO) Project of the Pacific Marine Environmental Laboratory (PMEL) FTP server, please contact one of these emails:
 
 - [Dai McClurg](mailto:dai.c.mcclurg@noaa.gov)
 - [Kenneth Connell](mailto:kenneth.connell@noaa.gov)
