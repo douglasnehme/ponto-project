@@ -1,16 +1,13 @@
 #!/bin/bash
-# AUTOR: Douglas Medeiros Nehme
-# PLACE: Rio de Janeiro - Brazil
-# CONTACT: medeiros.douglas3@gmail.com
-# CRIATION: apr/2022
-# OBJECTIVE: Global variables of Ponto Project
+# OBJECTIVE: Example of definition of Ponto
+#            Project global variables
 
 #################################################
 #### Path Definiiton ############################
 #################################################
 ROOTDIR="/home/douglas/Dropbox/profissional/ponto-project"
 CONDA_PATH="/home/douglas/miniconda3"
-CONDA_ENV=ponto-v0.2.0
+CONDA_ENV=ponto-v0.2.1
 
 # If you set AUTO_DATADIR as "yes" the downloaded
 # data will be saved in a folder called `data`
@@ -60,7 +57,7 @@ PMEL_PASSWORD="yyyyyyyyyyyy"
 #### DO NOT CHANGE FROM HERE ####################
 #################################################
 DATADIR="$ROOTDIR/data"
-SCRIPTDIR="$ROOTDIR/script/download_data"
+SCRIPTDIR="$ROOTDIR/ponto-project/download_data"
 LOGFILE="$DATADIR/log"
 CONDA_SH_PATH="$CONDA_PATH/etc/profile.d/conda.sh"
 PATH_PYTHON="$CONDA_PATH/envs/$CONDA_ENV/bin/python3"

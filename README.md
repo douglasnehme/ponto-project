@@ -4,6 +4,10 @@ Automated download of different types of oceanographic data for the South Atlant
 
 All data obtained does not and is not intended to undergo any extra treatment beyond that provided by the original sources. However, some minimal modifications are necessary, as in the case of the PIRATA Project data, where all variables of a buoy are gathered in a single file, unlike what is observed in their FTP server.
 
+## More Advanced Stable Version
+
+Version 0.2.1
+
 ## Data Bases
 
 - Implemented
@@ -33,7 +37,7 @@ For a correct use of the Ponto Project system, it is recommended to clone the co
 
 ## Definition of Spatial and Temporal Limits
 
-Make a copy of the example.input file by changing its name to ponto.input and adapt it for your purpose with the desired values for longitude, latitude, datetime, paths, and your credentials.
+The simplest way is to make a copy of the example.input file and name it ponto.input and save it in the script folder, the same folder as example.input is located. Then adapt the ponto.input for your purpose with the desired values for longitude, latitude, datetime, paths, and your credentials. If needed, the first lines of the ponto_run.sh script describe the best way to modify the location of the ponto.input that the system understands.
 
 To create your own login and password to access PIRATA Project data from the Tropical Atmosphere Ocean (TAO) Project of the Pacific Marine Environmental Laboratory (PMEL) FTP server, please contact one of these emails:
 

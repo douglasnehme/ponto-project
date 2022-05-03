@@ -1,5 +1,5 @@
 # Input file
-ponto.input
+/ponto-project/ponto.input
 
 # Older scripts
-/script/download_data/.scripts_for_other_datatype
+/ponto-project/download_data/.scripts_for_other_datatype

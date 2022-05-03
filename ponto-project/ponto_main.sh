@@ -1,8 +1,4 @@
 #!/bin/bash
-# AUTOR: Douglas Medeiros Nehme
-# PLACE: Rio de Janeiro - Brazil
-# CONTACT: medeiros.douglas3@gmail.com
-# CRIATION: apr/2022
 # OBJECTIVE: Orchestrate the automated
 #            download of different types of
 #            oceanographic data based on
