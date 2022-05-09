@@ -16,10 +16,9 @@ Version 0.2.1
     - Just the hourly data (one of the sample frequencies named as high resolution by PIRATA Project)
 
 - In Development
-  - ...
+  - [Argo](https://argo.ucsd.edu/) from [EN4](https://www.metoffice.gov.uk/hadobs/en4/)
 
 - Planned
-  - [Argo](https://argo.ucsd.edu/)
   - [Drifter](https://www.aoml.noaa.gov/phod/gdp/)
   - [SiMCosta (Monitoring System of the Brazilian Coast)](https://simcosta.furg.br/home)
   - Satellite data from different sources
