@@ -6,7 +6,7 @@ All data obtained does not and is not intended to undergo any extra treatment be
 
 ## More Advanced Stable Version
 
-Version 0.2.1
+Version 0.3.0
 
 ## Data Bases
 
@@ -14,9 +14,11 @@ Version 0.2.1
   - [PNBOIA (Brazilian National Buoy Program)](https://www.marinha.mil.br/chm/dados-do-goos-brasil/pnboia)
   - [PIRATA Project](https://www.pmel.noaa.gov/gtmba/pmel-theme/atlantic-ocean-pirata)
     - Just the hourly data (one of the sample frequencies named as high resolution by PIRATA Project)
+  - [Argo](https://argo.ucsd.edu/) from [EN4](https://www.metoffice.gov.uk/hadobs/en4/)
+    - Based on EN4 4.2.2 version
 
 - In Development
-  - [Argo](https://argo.ucsd.edu/) from [EN4](https://www.metoffice.gov.uk/hadobs/en4/)
+  -...
 
 - Planned
   - [Drifter](https://www.aoml.noaa.gov/phod/gdp/)
@@ -28,13 +30,18 @@ Version 0.2.1
 
 As Ponto Project is being developed using Python and Bash it needs to run on UNIX operating systems.
 
-## Conda Environment
+## How to Use the System?
+
+1. Clone the [Ponto Project System](https://github.com/douglasnehme/ponto-project)
+1. Create a python environment with the minimum required dependencies. For this, the [Anaconda platform](https://www.anaconda.com/products/distribution) is indicated. If you have never used it, you can take your first steps [here](https://docs.anaconda.com/anaconda/user-guide/getting-started/) and [here](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html). If you have some experience you can to to this [point](### Conda Environment)
+
+### Conda Environment
 
 For a correct use of the Ponto Project system, it is recommended to clone the conda environment used in the development of the current version of the project by executing the command below in the terminal (the * sign represents the version of the file and needs to be changed).
 
 `conda create --name <your-env-name> --file ponto-v*.txt`
 
-## Definition of Spatial and Temporal Limits
+### Definition of Spatial and Temporal Limits
 
 The simplest way is to make a copy of the example.input file and name it ponto.input and save it in the script folder, the same folder as example.input is located. Then adapt the ponto.input for your purpose with the desired values for longitude, latitude, datetime, paths, and your credentials. If needed, the first lines of the ponto_run.sh script describe the best way to modify the location of the ponto.input that the system understands.
 
