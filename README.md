@@ -35,7 +35,7 @@ As Ponto Project is being developed using Python and Bash it needs to run on UNI
 1. Clone the [Ponto Project System](https://github.com/douglasnehme/ponto-project)
 1. Create a python environment with the minimum required dependencies. For this, the [Anaconda platform](https://www.anaconda.com/products/distribution) is indicated. If you have never used it, you can take your first steps [here](https://docs.anaconda.com/anaconda/user-guide/getting-started/) and [here](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html). If you have some experience you can to to this [point](### Conda Environment)
 
-### Conda Environment
+###Conda Environment
 
 For a correct use of the Ponto Project system, it is recommended to clone the conda environment used in the development of the current version of the project by executing the command below in the terminal (the * sign represents the version of the file and needs to be changed).
 
