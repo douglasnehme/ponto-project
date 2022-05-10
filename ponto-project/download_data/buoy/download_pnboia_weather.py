@@ -269,9 +269,9 @@ if weather_data_time_filtered:
         # Station
         print((
             '>>>> Getting PNBOIA weather' +
-            ' data from {0}').format(
-                buoy))
-
+            ' buoy data from {0}').format(
+                buoy
+        ))
         # Rename index column
         df.index.name = 'datetime'
         
@@ -284,6 +284,8 @@ if weather_data_time_filtered:
                     buoy)),
             na_rep='NaN')
 else:
-    print(('>>>> Not available PNBOIA' +
-    ' weather data for desired area ' +
-    'and time'))
+    print((
+        '>>>> Not available PNBOIA' +
+        ' weather buoy data for the' +
+        ' desired area and time'
+    ))

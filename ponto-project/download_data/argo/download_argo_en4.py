@@ -12,9 +12,9 @@ import subprocess
 import xarray as xr
 import pandas as pd
 
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 
-# load_dotenv('/home/douglas/Dropbox/profissional/ponto-project/ponto-project/ponto.input')
+load_dotenv('/home/douglas/Dropbox/profissional/ponto-project/ponto-project/ponto.input')
 
 ############################################
 # CONFIG PARAMETERS AND GLOBAL VARIABLES ###
@@ -34,7 +34,16 @@ def get_argo_en4_global_files(
         end_time,
         freq='M'
     )
+
+    if months.empty:
+        months = pd.date_range(
+            start_time,
+            end_time,
+            periods=1
+        )
+
     unziped_files = list()
+
     for year in range(start_time.year, end_time.year+1):
         zip_filename = (
             'EN.4.2.2.profiles.g10.' +
@@ -57,8 +66,7 @@ def get_argo_en4_global_files(
         )
         subprocess.run([
             'wget',
-            '--verbose',
-            '--show-progress',
+            '--quiet',
             '--https-only',
             '-N',
             '-P',
@@ -73,6 +81,7 @@ def get_argo_en4_global_files(
             ))
             subprocess.run([
                 'unzip',
+                '-q',
                 '-o',
                 '-d',
                 dir2save,
@@ -92,10 +101,10 @@ def get_argo_en4_global_files(
 
     return unziped_files
 
-obsdir = os.environ[
-    'DATATYPE_DIR'
-]
-# obsdir = '/home/douglas/Dropbox/profissional/ponto-project/data/argo'
+# obsdir = os.environ[
+#     'DATATYPE_DIR'
+# ]
+obsdir = '/home/douglas/Dropbox/profissional/ponto-project/data/argo'
 en4_dir = (
     'https://www.metoffice.gov.uk/hadobs/' +
     'en4/data/en4-2-1/'
@@ -164,22 +173,36 @@ nc = nc.where(
 # The symbol inside astype func means get
 # just the first four values in the string
 argo_mask = nc['PROJECT_NAME'].astype('|S4') == b'ARGO'
+
 # Select just data from ARGO. Descided to
 # mask the dataset by N_PROF dimension
 # because it is the PROJECT_NAME dim
 nc = nc.sel(
     N_PROF = argo_mask
 )
-# Save file
-warnings.simplefilter(
-    "ignore",
-    category=xr.SerializationWarning
-)
-nc.to_netcdf(
-    os.path.join(
-        obsdir,
-        'argo_en4.nc'
-))
+if nc['N_PROF'].size > 0:
+    print((
+        '>>>> Getting ARGO data from EN4' +
+        ' for {0} profiles').format(
+            nc['N_PROF'].size
+    ))
+    # Save file
+    warnings.simplefilter(
+        "ignore",
+        category=xr.SerializationWarning
+    )
+    nc.to_netcdf(
+        os.path.join(
+            obsdir,
+            'argo_en4.nc'
+    ))
+else:
+    print((
+        '>>>> Not available ARGO data' +
+        ' from EN4 for the desired area ' +
+        'and time'
+    ))
+
 # Delete global files
 for file in argo_files:
     try:

@@ -343,8 +343,6 @@ def get_weather_data(
                         file
                     )
                     var_name = file.split(buoy)[0]
-                    
-                    # print('\n', file)
 
                     host.download(
                         ftp_filename,
@@ -380,8 +378,6 @@ def get_weather_data(
 
                         buoy_vars.append(df)
                         metadata[buoy][var_name] = meta
-
-                        # print(df.columns)
             
             buoys_weather_data[buoy] = pd.concat(
                 buoy_vars,
@@ -491,7 +487,7 @@ if weather_data_time_filtered:
         # Station
         print((
             '>>>> Getting PIRATA weather' +
-            ' data from {0}').format(
+            ' buoy data from {0}').format(
                 buoy
         ))
         # Save data file
@@ -516,6 +512,8 @@ if weather_data_time_filtered:
         )
     
 else:
-    print(('>>>> Not available PIRATA' +
-    ' weather data for desired area ' +
-    'and time\n'))
+    print((
+        '>>>> Not available PIRATA' +
+        ' weather buoy data for the' +
+        ' desired area and time'
+    ))
