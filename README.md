@@ -18,7 +18,7 @@ Version 0.3.0
     - Based on EN4 4.2.2 version
 
 - In Development
-  -...
+  - ...
 
 - Planned
   - [Drifter](https://www.aoml.noaa.gov/phod/gdp/)
@@ -32,16 +32,16 @@ As Ponto Project is being developed using Python and Bash it needs to run on UNI
 
 ## How to Use the System?
 
-1. Clone the [Ponto Project System](https://github.com/douglasnehme/ponto-project)
-1. Create a python environment with the minimum required dependencies using [Anaconda platform](https://www.anaconda.com/products/distribution). If you have never used it, you can take your first steps [here](https://docs.anaconda.com/anaconda/user-guide/getting-started/) and [here](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html). If you have some experience you can go to this [point](https://github.com/douglasnehme/ponto-project#conda-environment)
-1. After to have the code and the minimum requirements you need to define your settings on a input file and where this file will be saved. Instructions can be read [here](https://github.com/douglasnehme/ponto-project#definition-of-spatial-and-temporal-limits)
-1. Run the [ponto_run.sh](/ponto-project/ponto_run.sh) script
+1. Clone the last version of the [Ponto Project System](https://github.com/douglasnehme/ponto-project).
+1. Create a python environment with the minimum required dependencies using [Anaconda platform](https://www.anaconda.com/products/distribution). If you have never used it, you can take your first steps [here](https://docs.anaconda.com/anaconda/user-guide/getting-started/) and [here](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html). If you have some experience you can go to this [point](https://github.com/douglasnehme/ponto-project#conda-environment).
+1. Once you have the code and minimum dependency requirements, you need to configure your settings in an input file and define where that file will be saved. Instructions can be read [here](https://github.com/douglasnehme/ponto-project#definition-of-spatial-and-temporal-limits).
+1. Run the [ponto_run.sh](/ponto-project/ponto_run.sh) script.
 
 ### Conda Environment
 
-For a correct use of the Ponto Project system, it is recommended to clone the conda environment used in the development of the current version of the project by executing the command below in the terminal (the * sign represents the version of the file and needs to be changed).
+For a correct use of the Ponto Project system, it is recommended to clone the conda environment used in the development of the current version of the project. If using the terminal you can execute the command below.
 
-`conda create --name <your-env-name> --file ponto-v*.txt`
+`conda create --name <your-env-name> --file ponto-requirements.txt`
 
 ### Definition of Spatial and Temporal Limits
 

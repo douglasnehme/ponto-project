@@ -1,5 +1,8 @@
 # Input file
 /ponto-project/ponto.input
 
-# Older scripts
+# Old dependency requirements
+old_versions_requirements
+
+# Old scripts
 /ponto-project/download_data/.scripts_for_other_datatype
