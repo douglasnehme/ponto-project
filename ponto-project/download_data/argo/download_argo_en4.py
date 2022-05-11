@@ -12,10 +12,6 @@ import subprocess
 import xarray as xr
 import pandas as pd
 
-from dotenv import load_dotenv
-
-load_dotenv('/home/douglas/Dropbox/profissional/ponto-project/ponto-project/ponto.input')
-
 ############################################
 # CONFIG PARAMETERS AND GLOBAL VARIABLES ###
 ############################################
@@ -101,10 +97,9 @@ def get_argo_en4_global_files(
 
     return unziped_files
 
-# obsdir = os.environ[
-#     'DATATYPE_DIR'
-# ]
-obsdir = '/home/douglas/Dropbox/profissional/ponto-project/data/argo'
+obsdir = os.environ[
+    'DATATYPE_DIR'
+]
 en4_dir = (
     'https://www.metoffice.gov.uk/hadobs/' +
     'en4/data/en4-2-1/'

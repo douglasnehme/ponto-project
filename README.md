@@ -6,7 +6,7 @@ All data obtained does not and is not intended to undergo any extra treatment be
 
 ## More Advanced Stable Version
 
-Version 0.3.0
+Version 0.3.1
 
 ## Data Bases
 
