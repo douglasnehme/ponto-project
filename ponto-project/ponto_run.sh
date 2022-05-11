@@ -10,7 +10,8 @@
 # folder of this ponto_run.sh script. But you can
 # set INPUT as an specific folder where your
 # ponto.input file is located. If the ponto.input
-# file does not exist the system will not work. 
+# file does not exist in the rigth path the
+# system will not work. 
 INPUT="default"
 
 #################################################
