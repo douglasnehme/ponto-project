@@ -102,7 +102,7 @@ obsdir = os.environ[
 ]
 en4_dir = (
     'https://www.metoffice.gov.uk/hadobs/' +
-    'en4/data/en4-2-1/'
+    'en4/data/en4-2-1/EN.4.2.2'
 )
 # Desired area
 lonmin = float(
