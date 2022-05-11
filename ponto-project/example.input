@@ -7,7 +7,7 @@
 #################################################
 ROOTDIR="/home/douglas/Dropbox/profissional/ponto-project"
 CONDA_PATH="/home/douglas/miniconda3"
-CONDA_ENV=ponto-v0.2.1
+CONDA_ENV=ponto-v0.3.0
 
 # If you set AUTO_DATADIR as "yes" the downloaded
 # data will be saved in a folder called `data`
@@ -44,8 +44,8 @@ DATETIME_MAX="21-02-2022 23:59:59"
 #### Data Type Definition  ######################
 #################################################
 # Options for this Ponto Project version
-# DATATYPE="buoy"
-DATATYPE="buoy"
+# DATATYPE="buoy|argo"
+DATATYPE="buoy|argo"
 
 #################################################
 #### Credential Definition ######################

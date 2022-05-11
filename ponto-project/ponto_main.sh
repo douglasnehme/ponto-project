@@ -93,6 +93,7 @@ for name in ${DATATYPE[*]}; do
             echo -e ">> Please wait, it can take" \
             "some minutes" |& tee -a \
             "$LOGFILE"
+            
             # Get script extension suffix to
             # properly run it
             ext="${script:(-2)}"
@@ -100,11 +101,13 @@ for name in ${DATATYPE[*]}; do
             if [ "$ext" = "py" ]; then
                 $PATH_PYTHON $script |& \
                 tee -a "$LOGFILE"
-                echo -e "\n"
+                echo -e "\n" |& tee -a \
+                "$LOGFILE"
                 
             elif [ "$ext" = "sh" ]; then
                 $script |& tee -a "$LOGFILE"
-                echo -e "\n"
+                echo -e "\n" |& tee -a \
+                "$LOGFILE"
             fi
         done
         
@@ -127,7 +130,8 @@ for name in ${DATATYPE[*]}; do
                 $PATH_PYTHON $script |& \
                 tee -a "$LOGFILE"
                 
-                echo -e "\n"
+                echo -e "\n" |& tee -a \
+                "$LOGFILE"
             done
         fi
     else
