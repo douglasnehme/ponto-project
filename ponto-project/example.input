@@ -7,7 +7,7 @@
 #################################################
 ROOTDIR="/home/douglas/Dropbox/profissional/ponto-project"
 CONDA_PATH="/home/douglas/miniconda3"
-CONDA_ENV=ponto-v0.3.2
+CONDA_ENV=ponto-v0.3.3
 
 # If you set AUTO_DATADIR as "yes" the downloaded
 # data will be saved in a folder called `data`

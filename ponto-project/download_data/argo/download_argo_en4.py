@@ -3,9 +3,10 @@
 # PLACE: Rio de Janeiro - Brazil
 # CONTACT: medeiros.douglas3@gmail.com
 # CRIATION: may/2022
-# OBJECTIVE: Download EN4 data
+# OBJECTIVE: Download ARGO data from EN4
 
 import os
+import requests
 import warnings
 import subprocess
 
@@ -100,9 +101,13 @@ def get_argo_en4_global_files(
 obsdir = os.environ[
     'DATATYPE_DIR'
 ]
-en4_dir = (
-    'https://www.metoffice.gov.uk/hadobs/' +
-    'en4/data/en4-2-1/EN.4.2.2'
+en4_dir = requests.get((
+    'https://raw.githubusercontent.com/' +
+    'douglasnehme/data-misc/main/' +
+    'en4_path.txt'
+))
+en4_dir = en4_dir.content.decode(
+    'utf-8'
 )
 # Desired area
 lonmin = float(
