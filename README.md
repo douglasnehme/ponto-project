@@ -21,6 +21,7 @@ Version 0.3.3
   - ...
 
 - Planned
+  - [Argo](https://argo.ucsd.edu/) using [Argopy](https://argopy.readthedocs.io/en/latest/index.html)
   - [Drifter](https://www.aoml.noaa.gov/phod/gdp/)
   - [SiMCosta (Monitoring System of the Brazilian Coast)](https://simcosta.furg.br/home)
   - Satellite data from different sources
